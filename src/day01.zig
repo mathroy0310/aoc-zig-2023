@@ -1,6 +1,6 @@
 const util = @import("utils.zig");
 
-const data = @embedFile("data/day01.txt");
+const data = @embedFile("data/input_day01.txt");
 
 const word_digit = [_][]const u8{ "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
 
