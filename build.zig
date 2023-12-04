@@ -25,7 +25,7 @@ pub fn build(b: *Build) void {
     // Set up an exe for each day
     var day: u32 = 1;
 
-    while (day <= 3) : (day += 1) {
+    while (day <= 4) : (day += 1) {
         const dayString = b.fmt("day{:0>2}", .{day});
         const zigFile = b.fmt("src/{s}.zig", .{dayString});
 
