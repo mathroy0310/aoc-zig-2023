@@ -15,8 +15,8 @@ Make sure to run this code using Zig `0.12.0-dev.1754+2a3226453`.
 ### Day by Day Progress
 - [x] Day 01
 - [x] Day 02
-- [ ] Day 03
-- [ ] Day 04
+- [x] Day 03
+- [x] Day 04
 - [ ] Day 05
 - [ ] Day 06
 - [ ] Day 07
