@@ -44,9 +44,7 @@ Make sure to run this code using Zig `0.12.0-dev.1754+2a3226453`.
 
 1. Clone this repository.
 2. Ensure you have Zig `0.12.0-dev.1754+2a3226453` installed.
-3. Navigate to the specific day's folder to view the problem statement and solution template.
-4. Implement your solution in Zig for each day.
-5. Update your progress by marking the completed days with [x] in the README.md file.
+3. Navigate to `subject` folder for problem statement and `src` for the solutions. (`src/data` for the input given by aoc)
 
 ## Contributions
 
@@ -56,5 +54,3 @@ Contributions are welcome! If you have an optimized solution, bug fixes, or enha
 ## Acknowledgments
 
 Thank you to the creators of Advent of Code for this wonderful coding challenge!
-
-Happy coding and good luck with the challenge!
