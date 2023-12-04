@@ -24,6 +24,7 @@ pub fn build(b: *Build) void {
 
     // Set up an exe for each day
     var day: u32 = 1;
+
     while (day <= 3) : (day += 1) {
         const dayString = b.fmt("day{:0>2}", .{day});
         const zigFile = b.fmt("src/{s}.zig", .{dayString});
@@ -43,15 +44,6 @@ pub fn build(b: *Build) void {
         });
         linkObject(b, build_test);
 
-        const run_test = b.addRunArtifact(build_test);
-
-        {
-            const step_key = b.fmt("test_{s}", .{dayString});
-            const step_desc = b.fmt("Run tests in {s}", .{zigFile});
-            const step = b.step(step_key, step_desc);
-            step.dependOn(&run_test.step);
-        }
-
         const run_cmd = b.addRunArtifact(exe);
         if (b.args) |args| {
             run_cmd.addArgs(args);
@@ -59,6 +51,7 @@ pub fn build(b: *Build) void {
 
         const run_desc = b.fmt("Run {s}", .{dayString});
         const run_step = b.step(dayString, run_desc);
+
         run_step.dependOn(&run_cmd.step);
         run_all.dependOn(&run_cmd.step);
     }

@@ -1,3 +1,4 @@
+//! https://adventofcode.com/2023/day/1
 const std = @import("std");
 const util = @import("utils.zig");
 const fmt = std.fmt;
@@ -6,6 +7,13 @@ const mem = std.mem;
 const data = @embedFile("data/input_day01.txt");
 
 const word_digit = [_][]const u8{ "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+
+pub fn main() !void {
+    util.printday(1);
+
+    std.debug.print("[Part 1] result total : {d}\n", .{solve(false, data)});
+    std.debug.print("[Part 2] result total : {d}\n", .{solve(true, data)});
+}
 
 fn search(is_part2: bool, input: []const u8) ?u8 {
     return fmt.charToDigit(input[0], 10) catch blk: {
@@ -43,11 +51,4 @@ fn solve(is_part2: bool, read_buff: []const u8) u32 {
         total_sum += (first_digit * 10) + last_digit;
     }
     return (total_sum);
-}
-
-pub fn main() !void {
-    util.printday(1);
-
-    std.debug.print("[Part 1] result total : {d}\n", .{solve(false, data)});
-    std.debug.print("[Part 2] result total : {d}\n", .{solve(true, data)});
 }
