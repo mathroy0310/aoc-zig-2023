@@ -13,8 +13,10 @@ fn solve(is_part2: bool, read_buff: []const u8) !u32 {
 pub fn main() !void {
     util.printday(3);
 
-    std.debug.print("[Part 1] result total : {d}\n", .{try solve(false, data)});
-    std.debug.print("[Part 2] result total : {d}\n", .{try solve(true, data)});
+    var timer = try std.time.Timer.start();
+    std.debug.print("[Part 1] result total : {d} | Timer {any}ms \n", .{ try solve(false, data), timer.read() });
+    timer = try std.time.Timer.start();
+    std.debug.print("[Part 2] result total : {d} | Timer {any}ms \n", .{ try solve(true, data), timer.read() });
 }
 
 fn is_symbol(slice: []const u8) bool {

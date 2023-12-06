@@ -11,8 +11,10 @@ const word_digit = [_][]const u8{ "one", "two", "three", "four", "five", "six", 
 pub fn main() !void {
     util.printday(1);
 
-    std.debug.print("[Part 1] result total : {d}\n", .{solve(false, data)});
-    std.debug.print("[Part 2] result total : {d}\n", .{solve(true, data)});
+    var timer = try std.time.Timer.start();
+    std.debug.print("[Part 1] result total : {d} | Timer : {any}ms\n", .{ solve(false, data), timer.read() });
+    timer = try std.time.Timer.start();
+    std.debug.print("[Part 2] result total : {d} | Timer : {any}ms \n", .{ solve(true, data), timer.read() });
 }
 
 fn search(is_part2: bool, input: []const u8) ?u8 {

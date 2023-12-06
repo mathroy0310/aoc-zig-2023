@@ -9,8 +9,8 @@ Make sure to run this code using Zig `0.12.0-dev.1754+2a3226453`.
 ## Current Progress
 
 ### Overall Progress
-- **Completed:** 4/25 Days
-- **Percentage:** 16%
+- **Completed:** 4.5/25 Days
+- **Percentage:** 18%
 
 ### Day by Day Progress
 - [x] Day 01
@@ -18,7 +18,7 @@ Make sure to run this code using Zig `0.12.0-dev.1754+2a3226453`.
 - [x] Day 03
 - [x] Day 04
 - [ ] Day 05
-- [ ] Day 06
+- [x] Day 06
 - [ ] Day 07
 - [ ] Day 08
 - [ ] Day 09
@@ -44,7 +44,8 @@ Make sure to run this code using Zig `0.12.0-dev.1754+2a3226453`.
 
 1. Clone this repository.
 2. Ensure you have Zig `0.12.0-dev.1754+2a3226453` installed.
-3. Navigate to `subject` folder for problem statement and `src` for the solutions. (`src/data` for the input given by aoc)
+3. Navigate to `subject` folder for problem statement and `src` for the solutions.
+	(`src/data` for the input given by aoc)
 
 ## Contributions
 
