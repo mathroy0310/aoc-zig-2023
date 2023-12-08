@@ -15,7 +15,7 @@ pub fn main() !void {
 
     var timer = try std.time.Timer.start();
     std.debug.print("[Part 1] result total : {d} | Timer {any}ms \n", .{ try solve(false, data), timer.read() });
-    timer = try std.time.Timer.start();
+    timer.reset();
     std.debug.print("[Part 2] result total : {d} | Timer {any}ms \n", .{ try solve(true, data), timer.read() });
 }
 

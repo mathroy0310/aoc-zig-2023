@@ -17,7 +17,7 @@ Make sure to run this code using Zig `0.12.0-dev.1754+2a3226453`.
 - [x] Day 02
 - [x] Day 03
 - [x] Day 04
-- [ ] Day 05
+- [x] Day 05
 - [x] Day 06
 - [ ] Day 07
 - [ ] Day 08
