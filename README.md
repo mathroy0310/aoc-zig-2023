@@ -9,8 +9,8 @@ Make sure to run this code using Zig `0.12.0-dev.1754+2a3226453`.
 ## Current Progress
 
 ### Overall Progress
-- **Completed:** 4.5/25 Days
-- **Percentage:** 18%
+- **Completed:** 7/25 Days
+- **Percentage:** 28%
 
 ### Day by Day Progress
 - [x] Day 01
@@ -19,7 +19,7 @@ Make sure to run this code using Zig `0.12.0-dev.1754+2a3226453`.
 - [x] Day 04
 - [x] Day 05
 - [x] Day 06
-- [ ] Day 07
+- [x] Day 07
 - [ ] Day 08
 - [ ] Day 09
 - [ ] Day 10
